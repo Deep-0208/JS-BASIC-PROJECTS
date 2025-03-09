@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #387780;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 800px;
+    max-height: 700px;  
+    margin: auto;
+}  
+
+h1{
+    color:aliceblue;
+    width: 300px;
+    margin: auto;
+    font-size: 3rem;
+}
+
+.msg{
+    font-size: 3rem;
+}
+
+#hide{
+    display: none;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+    max-width: 600px;
+    max-height: 600px;
+    margin-top: 20px;
+    align-content: start;
+}
+
+.btn {
+    flex: 1 0 calc(33.33% - 10px);
+    height: calc(33.33% - 10px);
+    background-color: #c0b9b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bolder;
+    color: black;
+}
+
+#reset-btn {
+    height: 30px;
+    width: 100px;
+    margin: auto;
+    border-radius: 0.35rem;
+    font-size: 1em;
+    background-color: #282727;
+    color: white;
+    font-weight: 400;
+}
+
+#new-game{
+    height: 30px;
+    width: 100px;
+    margin: auto;
+    border-radius: 0.35rem;
+    font-size: 1em;
+    background-color: #282727;
+    color: white;
+    font-weight: 400;
+}
+
+/* Ensure a minimum of three boxes in a row and a column */
+@media (max-width: 600px) {
+    .btn {
+        flex: 1 0 calc(33.33% - 10px);
+        height: calc(33.33% - 10px);
+    }
+}
+
+/* Ensure a minimum of three boxes in a column for smaller heights */
+@media (max-height: 600px) {
+    .btn {
+        flex: 1 0 calc(33.33% - 10px);
+        height: calc(33.33% - 10px);
+    }
+}
